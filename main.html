@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-area {
+            position: relative;
+            width: 43%;
+            height: 2px;
+            border-radius: 50px;
+            background: rgba(105, 105, 170, .1);
+            margin: 0 15px 0px 10px ;
+        }
+
+        .progress-bar {
+            position: relative;
+            height: inherit;
+            width: 40%;
+            border-radius: inherit;
+            background: #36e2ec;
+        }
+
+        .progress-bar::before {
+            content: "";
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                background: #000;
+                border-radius: inherit;
+                top: 50%;
+                right: -5px;
+                transform: translateY(-50%);
+                background: inherit;
+                opacity: 1;
+                transition: opacity .2s ease;
+        }
+
+        .progress-bar::after {
+            content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: inherit;
+    right: -11px;
+    top: -7px;
+    box-shadow: inset 0 0 3px #36e2ec;
+        }
+
+        .area {
+            height: 6px;
+        width: 100%;
+        background: #f0f0f0;
+        border-radius: 50px;
+        cursor: pointer;
+        }
+
+        .bar {
+            margin-top: 50px;
+            position: relative;
+            height: inherit;
+            width: 10%;
+            border-radius: inherit;
+            background: #36e2ec;
+        }
+
+        .bar::before {
+            content: "";
+                position: absolute;
+                height: 12px;
+                width: 12px;
+                background: #000;
+                border-radius: inherit;
+                top: 50%;
+                right: -5px;
+                transform: translateY(-50%);
+                background: inherit;
+                opacity: 1;
+                transition: opacity .2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-area">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="area">
+        <div class="bar">
+
+        </div>
+    </div>
+</body>
+</html>
