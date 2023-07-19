@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --border01: #22262A;
+    --border02: #1a1d21;
+    --box-shadow03: 
+    6px 6px 12px #151618,
+    -6px -6px 12px #2c3136;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -163,6 +171,7 @@ header .menu__side .menu__song li img {
     width: 32px;
     height: 32px;
     margin-left: 25px;
+    border-radius: 4px;
 }
 
 header .menu__side .menu__song li h5 {
@@ -191,6 +200,7 @@ header .master__play {
     display: flex;
     align-items: center;    
     padding: 0 20px;
+    z-index: 10;
 }
 
 header .master__play .wave {
@@ -224,6 +234,10 @@ header .master__play .wave .wave1:nth-child(3) {
 /*Javascript class ware*/
 header .master__play .active2 .wave1 {
     animation: wave .5s linear infinite;
+}
+
+header .master__play .img__play {
+    border-radius: 50%;
 }
 
 
@@ -287,13 +301,13 @@ header .master__play .icon .play-pause {
 
 header .master__play .icon .play-pause {
     border: 1px solid rgba(105, 105, 170, .1);
-    background:linear-gradient(135deg, #2f323b, #4c5262);
-    box-shadow: 
+    /* background:linear-gradient(135deg, #2f323b, #4c5262); */
+    /* box-shadow: 
     5px 5px 6px #393f50
     -5px -5px -5px #4c5262
     inset 2px 2px 4px #4c5262
     inset -2px -2px -4px #242834;
-    transition: .3s linear;
+    transition: .3s linear; */
 }
 
 header .master__play span {
@@ -550,7 +564,7 @@ header .song__side::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 630px;
+    height: 638px;
     background: url(../img/taylor_swift.png);
     z-index: -1000;
     opacity: .5;
@@ -839,7 +853,9 @@ header .song__side .popular__artists .item li img {
 }
 
 /**********************************/
+@media screen and (max-width: 576px) {
 
+}
 
 
 

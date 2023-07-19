@@ -13,14 +13,27 @@ progressDot = wrapper.querySelector(".dot")
 musicList = wrapper.querySelector(".menu__song")
 iconRepeatOne = wrapper.querySelector(".icon-repeat-one")
 iconVolume = wrapper.querySelector(".volume-icon");
+wave = wrapper.querySelector(".wave");
+musicImg = wrapper.querySelector(".music__img");
 
 
 let musicIndex = Math.floor((Math.random() * allSongs.length) + 1)
+
 
 window.addEventListener('load', () => {
     loadMusic(musicIndex);
     playingNow();
 })
+
+const cdThumbAnimate = musicImg.animate(
+    [{
+        transform: 'rotate(360deg)'
+    }], {
+        duration: 10000,
+        iterations: Infinity
+    }
+)
+cdThumbAnimate.pause();
 
 function loadMusic(indexNumb) {
     musicName.innerText = allSongs[indexNumb - 1].songName;
@@ -32,12 +45,16 @@ function loadMusic(indexNumb) {
 function playMusic() {
     wrapper.classList.add("paused")
     playPauseBtn.classList.add("paused")
+    wave.classList.add('active2')
+    cdThumbAnimate.play();
     mainAudio.play();
 }
 
 function pauseMusic() {
     wrapper.classList.remove("paused")
     playPauseBtn.classList.remove("paused")
+    wave.classList.remove('active2')
+    cdThumbAnimate.pause();
     mainAudio.pause();
 }
 
