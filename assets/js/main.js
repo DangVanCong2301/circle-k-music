@@ -1,3 +1,6 @@
+// Cập nhật lại Website trên GitHub Pages
+// Nguồn: https://www.youtube.com/watch?v=5vDepCaFdj4&t=441s
+
 const wrapper = document.querySelector(".wrapper")
 musicImg = wrapper.querySelector("#poster-master-play")
 musicName = wrapper.querySelector(".title")
