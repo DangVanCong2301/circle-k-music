@@ -103,5 +103,12 @@ let allSongs = [
         artist: "Ariana Grande",
         poster: "ariana_grande",
         src: "positions"
+    },
+    {
+        id:"16",
+        songName:"Think Bout You", 
+        artist: "Four Oceans",
+        poster: "think_bout_you",
+        src: "thinking_bout_you"
     }
 ]
