@@ -7,6 +7,11 @@
 }
 
 :root {
+    --body-color: #111727;
+    --text-color: #fff;
+    --text-color-light: #4c5262;
+    --container-color: #0b1320; 
+    --normal-font-size: 14px;
     --border01: #22262A;
     --border02: #1a1d21;
     --box-shadow03: 
@@ -15,10 +20,17 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.home {
+    background-color: #131313;
     width: 100%;
     height: 100vh;
-    background-color: #131313;
-    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
 }
@@ -852,10 +864,7 @@ header .song__side .popular__artists .item li img {
     position: absolute;
 }
 
-/**********************************/
-@media screen and (max-width: 576px) {
 
-}
 
 
 
