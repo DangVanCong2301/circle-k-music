@@ -96,6 +96,12 @@ let allSongs = [
         artist: "Justin Bieber",
         poster:"let_me_love_you",
         src: "let_me_love_you"
+    },
+    {
+        id:"15",
+        songName:"Positions", 
+        artist: "Ariana Grande",
+        poster:"ariana_grande",
+        src: "positions"
     }
-
 ]
