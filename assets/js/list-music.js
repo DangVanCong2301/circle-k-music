@@ -101,7 +101,7 @@ let allSongs = [
         id:"15",
         songName:"Positions", 
         artist: "Ariana Grande",
-        poster:"ariana_grande",
+        poster: "ariana_grande",
         src: "positions"
     }
 ]
