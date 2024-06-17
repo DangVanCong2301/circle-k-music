@@ -234,3 +234,11 @@ vol.addEventListener('change', () => {
     mainAudio.volume = volA / 100;
 });
  
+// Hide Listen Window
+function hideListenSongWindow() {
+    document.querySelector(".listen-mobile").classList.add("hide");
+}
+
+function showListenSongWindow() {
+    document.querySelector(".listen-mobile").classList.remove("hide");
+}
