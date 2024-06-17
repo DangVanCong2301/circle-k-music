@@ -80,21 +80,21 @@ let allSongs = [
         id:"12",
         songName: "Closer", 
         artist: "Halsey",
-        poster:"closer",
+        poster: "closer",
         src: "closer"
     },
     {
         id:"13",
         songName: "You Broke Me First", 
         artist: "Tate McRae",
-        poster:"you_broke_me_first",
+        poster: "you_broke_me_first",
         src: "you_broke_me_first"
     },
     {
         id:"14",
         songName: "Let Me Love You", 
         artist: "Justin Bieber",
-        poster:"let_me_love_you",
+        poster: "let_me_love_you",
         src: "let_me_love_you"
     },
     {
