@@ -52,7 +52,7 @@ let allSongs = [
         id:"8",
         songName: "Party In The USA", 
         artist: "Miley Cyrus",
-        poster:"party_in_the_usa",
+        poster: "party_in_the_usa",
         src: "party_in_the_usa"
     },
     {
@@ -66,14 +66,14 @@ let allSongs = [
         id:"10",
         songName: "It's Ok If You Forget Me", 
         artist: "Astrid S",
-        poster:"its_okay_if_you_forget_me",
+        poster: "its_okay_if_you_forget_me",
         src: "its_okey_if_you_forget_me"
     },
     {
         id:"11",
         songName: "Let Me Go", 
         artist: "Hailee Steinfeld, Alesso",
-        poster:"let_me_go",
+        poster: "let_me_go",
         src: "let_me_go"
     },
     {
