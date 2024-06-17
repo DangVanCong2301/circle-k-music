@@ -242,20 +242,125 @@
             </header>
         </div>
         <div class="home-mobile hide-on-table hide-on-destop">
-            <div class="home-mobile__header">
-                <div class="home-mobile__header-back">
-                    <i class="uil uil-arrow-left home-mobile__header-icon"></i>
+            <div class="home-mobile__bottom">
+                <div class="home-mobile__bottom-song">
+                    <div class="home-mobile__bottom-song-info" onclick="showListenSongWindow()">
+                        <div class="home-mobile__bottom-song-thumbnail" style="background-image: url(./assets/img/taylor-swift.jpg);">
+                        </div>
+                        <div class="home-mobile__bottom-song-desc">
+                            <div class="home-mobile__bottom-song-info-name">Back To December</div>
+                            <div class="home-mobile__bottom-song-info-artist">Taylor Swift</div>
+                        </div>
+                    </div>
+                    <div class="home-mobile__bottom-song-control">
+                        <div class="home-mobile__bottom-song-control-favorite">
+                            <i class="uil uil-heart-alt home-mobile__bottom-song-control-icon"></i>
+                        </div>
+                        <div class="home-mobile__bottom-song-control-favorite">
+                            <i class="uil uil-play icon-play home-mobile__bottom-song-control-icon"></i>
+                        </div>
+                        <div class="home-mobile__bottom-song-control-favorite">
+                            <i class="uil uil-skip-forward-alt home-mobile__bottom-song-control-icon" id="next"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="home-mobile__header-title">
-                    <div class="home-mobile__header-title-name">Phát từ</div>
-                    <div class="home-mobile__header-title-sub">Nhạc đã tải lên</div>
-                </div>
-                <div class="home-mobile__header-more">
-                    <i class="uil uil-ellipsis-h home-mobile__header-icon"></i>
+                <div class="home-mobile__bottom-nav">
+                    <div class="home-mobile__bottom-nav-item">
+                        <i class="uil uil-estate home-mobile__bottom-nav-icon"></i>
+                        <div class="home-mobile__bottom-nav-sub">Thư viện</div>
+                    </div>
+                    <div class="home-mobile__bottom-nav-item">
+                        <i class="uil uil-compact-disc home-mobile__bottom-nav-icon"></i>
+                        <div class="home-mobile__bottom-nav-sub">Khám phá</div>
+                    </div>
+                    <div class="home-mobile__bottom-nav-item">
+                        <i class="uil uil-user home-mobile__bottom-nav-icon"></i>
+                        <div class="home-mobile__bottom-nav-sub">Cá nhân</div>
+                    </div>
                 </div>
             </div>
-            <div class="home-mobile__thumbnail">
-                <img src="./assets/img/taylor-swift.jpg" alt="" class="home-mobile__thumbnail-img">
+            <div class="listen-mobile">
+                <div class="listen-mobile__header">
+                    <div class="listen-mobile__header-back" onclick="hideListenSongWindow()">
+                        <i class="uil uil-angle-down listen-mobile__header-icon"></i>
+                    </div>
+                    <div class="listen-mobile__header-title">
+                        <div class="listen-mobile__header-title-name">Phát từ</div>
+                        <div class="listen-mobile__header-title-sub">Nhạc đã tải lên</div>
+                    </div>
+                    <div class="listen-mobile__header-more">
+                        <i class="uil uil-ellipsis-h listen-mobile__header-icon"></i>
+                    </div>
+                </div>
+                <div class="listen-mobile__thumbnail">
+                    <img src="./assets/img/taylor-swift.jpg" alt="" class="listen-mobile__thumbnail-img">
+                </div>
+                <div class="listen-mobile__info">
+                    <div class="listen-mobile__info-share">
+                        <i class="uil uil-share listen-mobile__info-icon"></i>
+                    </div>
+                    <div class="listen-mobile__info-song">
+                        <div class="listen-mobile__info-song-name">Back To December</div>
+                        <div class="listen-mobile__info-song-artist">Taylor Swift</div>
+                    </div>
+                    <div class="listen-mobile__info-favorite">
+                        <i class="uil uil-heart-alt listen-mobile__info-icon"></i>
+                    </div>
+                </div>
+                <div class="listen-mobile__animation hide-on-mobile">
+                    <div class="listen-mobile__ware">
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                        <div class="listen-mobile__stroke"></div>
+                    </div>
+                </div>
+                <div class="listen-mobile__seekbar">
+                    <div class="listen-mobile__seekbar-area">
+                        <div class="listen-mobile__seekbar-bar"></div>
+                    </div>
+                    <div class="listen-mobile__seekbar-time">
+                        <div class="listen-mobile__seekbar-time-start">0:00</div>
+                        <div class="listen-mobile__seekbar-time-start">4:55</div>
+                    </div>
+                </div>
+                <div class="listen-mobile__control">
+                    <div class="listen-mobile__control-loop">
+                        <i class="material-icons listen-mobile__control-icon" title="Playlist looped">repeat</i>
+                    </div>
+                    <div class="listen-mobile__control-prev">
+                        <i class="uil uil-step-backward-alt listen-mobile__control-icon" id="prev"></i>
+                    </div>
+                    <div class="listen-mobile__control-play-pause">
+                        <i class="uil uil-play icon-play listen-mobile__control-play-pause "></i>
+                    </div>
+                    <div class="listen-mobile__control-play-next">
+                        <i class="uil uil-skip-forward-alt listen-mobile__control-icon" id="next"></i>
+                    </div>
+                    <div class="listen-mobile__control-repeat-one">
+                        <i class="uil uil-redo listen-mobile__control-icon"></i>
+                    </div>
+                </div>
+                <div class="listen-song__bottom">
+                    <div class="listen-song__bottom-chat">
+                        <i class="uil uil-chat listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-add-playlist">
+                        <i class="uil uil-music-note listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-add-quality">
+                        128Kbps
+                    </div>
+                    <div class="listen-song__bottom-download">
+                        <i class="uil uil-import listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-playlist active">
+                        <i class="uil uil-list-ol listen-song__bottom-icon"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
