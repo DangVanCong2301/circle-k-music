@@ -242,3 +242,35 @@ function hideListenSongWindow() {
 function showListenSongWindow() {
     document.querySelector(".listen-mobile").classList.remove("hide");
 }
+
+// Header More Bottom Sheet
+function openHeaderMoreBotomSheet() {
+    document.querySelector(".listen-mobile__header-more-bottom-sheet-overlay").classList.add("show");
+    document.querySelector(".listen-mobile__header-more-bottom-sheet-container").classList.add("show");
+}
+
+window.addEventListener('click', e => {
+    if (e.target == document.querySelector(".listen-mobile__header-more-bottom-sheet-overlay")) {
+        document.querySelector(".listen-mobile__header-more-bottom-sheet-overlay").classList.remove("show");
+        document.querySelector(".listen-mobile__header-more-bottom-sheet-container").classList.remove("show");
+    }
+});
+
+// Chat Bottom Sheet
+function openChatBottomSheet() {
+    document.querySelector(".listen-song__bottom-chat-bottom-sheet-overlay").classList.add("show");
+    document.querySelector(".listen-song__bottom-chat-bottom-sheet-container").classList.add("show");
+}
+
+function closeChatBottomSheet() {
+    console.log(document.querySelector(".listen-song__bottom-chat-bottom-sheet-container").style);
+    document.querySelector(".listen-song__bottom-chat-bottom-sheet-overlay").classList.remove("show");
+    document.querySelector(".listen-song__bottom-chat-bottom-sheet-container").classList.remove("show");
+}
+
+window.addEventListener('click', e => {
+    if (e.target == document.querySelector(".listen-song__bottom-chat-bottom-sheet-overlay")) {
+        document.querySelector(".listen-song__bottom-chat-bottom-sheet-overlay").classList.remove("show");
+        document.querySelector(".listen-song__bottom-chat-bottom-sheet-container").classList.remove("show");
+    }
+});
