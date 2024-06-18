@@ -288,8 +288,61 @@
                         <div class="listen-mobile__header-title-name">Phát từ</div>
                         <div class="listen-mobile__header-title-sub">Nhạc đã tải lên</div>
                     </div>
-                    <div class="listen-mobile__header-more">
+                    <div class="listen-mobile__header-more" onclick="openHeaderMoreBotomSheet()">
                         <i class="uil uil-ellipsis-h listen-mobile__header-icon"></i>
+                    </div>
+                    <div class="listen-mobile__header-more-bottom-sheet-overlay"></div>
+                    <div class="listen-mobile__header-more-bottom-sheet-container">
+                        <div class="listen-mobile__header-more-bottom-sheet-header">
+                            <div class="listen-mobile__header-more-bottom-sheet-header-item">
+                                <i class="uil uil-clock-five listen-mobile__header-more-bottom-sheet-header-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-header-sub">Hẹn giờ</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-header-item">
+                                <i class="uil uil-sliders-v-alt listen-mobile__header-more-bottom-sheet-header-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-header-sub">Bộ chỉnh âm</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-header-item">
+                                <i class="uil uil-setting listen-mobile__header-more-bottom-sheet-header-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-header-sub">Chất lượng</div>
+                            </div>
+                        </div>
+                        <div class="listen-mobile__header-more-bottom-sheet-song">
+                            <div class="listen-mobile__header-more-bottom-sheet-song-img" style="background-image: url(./assets/img/taylor-swift.jpg);"></div>
+                            <div class="listen-mobile__header-more-bottom-sheet-song-desc">
+                                <div class="listen-mobile__header-more-bottom-sheet-song-name">Back To December</div>
+                                <div class="listen-mobile__header-more-bottom-sheet-song-artist">Taylor Swift</div>
+                            </div>
+                            <a href="#" class="listen-mobile__header-more-bottom-sheet-song-share">
+                                <i class="uil uil-share listen-mobile__header-more-bottom-sheet-song-share-icon"></i>
+                            </a>
+                        </div>
+                        <div class="listen-mobile__header-more-bottom-sheet-options">
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-cloud-download listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Tải xuống</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-heart listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Thêm vào thư viện</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-music-note listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Thêm vào playlist</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-repeat listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Phát nội dung tương tự</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-moonset listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Đặt làm nhạc trờ Zalo</div>
+                            </div>
+                            <div class="listen-mobile__header-more-bottom-sheet-option">
+                                <i class="uil uil-chat listen-mobile__header-more-bottom-sheet-option-icon"></i>
+                                <div class="listen-mobile__header-more-bottom-sheet-option-sub">Bình luận (1)</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="listen-mobile__thumbnail">
@@ -345,8 +398,64 @@
                     </div>
                 </div>
                 <div class="listen-song__bottom">
-                    <div class="listen-song__bottom-chat">
+                    <div class="listen-song__bottom-chat" onclick="openChatBottomSheet()">
                         <i class="uil uil-chat listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-chat-bottom-sheet-overlay"></div>
+                    <div class="listen-song__bottom-chat-bottom-sheet-container">
+                        <div class="listen-song__bottom-chat-bottom-sheet-header">
+                            <div class="listen-song__bottom-chat-bottom-sheet-header-sub">2 bình luận</div>
+                            <div class="listen-song__bottom-chat-bottom-sheet-header-close" onclick="closeChatBottomSheet()">
+                                <i class="uil uil-multiply listen-song__bottom-chat-bottom-sheet-header-icon"></i>
+                            </div>
+                        </div>
+                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment">
+                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item">
+                                <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-avatar" style="background-image: url(./assets/img/taylor-swift.jpg);"></div>
+                                <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-right">
+                                    <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-info">
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-desc">
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-name">Công Đặng</div>
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-cmt">Chill quá😊</div>
+                                        </div>
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-favorite">
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-favorite-quanlity">2</div>
+                                            <i class="uil uil-heart-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-footer">
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-time">Vừa xong</div>
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-reply">Trả lời</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item">
+                                <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-avatar" style="background-image: url(./assets/img/taylor-swift.jpg);"></div>
+                                <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-right">
+                                    <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-info">
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-desc">
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-name">Luyến</div>
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-account-cmt">Hay quá trời r</div>
+                                        </div>
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-favorite">
+                                            <div class="listen-song__bottom-chat-bottom-sheet-body-comment-favorite-quanlity">2</div>
+                                            <i class="uil uil-heart-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-footer">
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-time">03 tháng 1</div>
+                                        <div class="listen-song__bottom-chat-bottom-sheet-body-comment-item-reply">Trả lời</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listen-song__bottom-chat-bottom-sheet-comment">
+                            <div class="listen-song__bottom-chat-bottom-sheet-comment-avatar" style="background-image: url(./assets/img/taylor-swift.jpg);"></div>
+                            <div class="listen-song__bottom-chat-bottom-sheet-comment-box">
+                                <input type="text" class="listen-song__bottom-chat-bottom-sheet-comment-input" placeholder="Nhập bình luận...">
+                            </div>
+                            <div class="listen-song__bottom-chat-bottom-sheet-comment-send">Gửi</div>
+                        </div>
                     </div>
                     <div class="listen-song__bottom-add-playlist">
                         <i class="uil uil-music-note listen-song__bottom-icon"></i>
