@@ -274,3 +274,28 @@ window.addEventListener('click', e => {
         document.querySelector(".listen-song__bottom-chat-bottom-sheet-container").classList.remove("show");
     }
 });
+
+// Add Playlist Bottom Sheet
+function showAddPlaylistBottomSheet() {
+    document.querySelector(".listen-song__bottom-add-playlist-bottom-sheet-overlay").classList.add("show");
+    document.querySelector(".listen-song__bottom-add-playlist-bottom-sheet-container").classList.add("show");
+}
+
+window.addEventListener('click', e => {
+    if (e.target == document.querySelector(".listen-song__bottom-add-playlist-bottom-sheet-overlay")) {
+        document.querySelector(".listen-song__bottom-add-playlist-bottom-sheet-overlay").classList.remove("show");
+        document.querySelector(".listen-song__bottom-add-playlist-bottom-sheet-container").classList.remove("show");
+    }
+});
+
+// Playlist Modal
+function openPlaylistModal() {
+    document.querySelector(".listen-song__bottom-playlist").classList.add("active");
+    document.querySelector(".listen-song__bottom-playlist-modal").classList.add("open");
+}
+
+function closePlaylistModal() {
+    document.querySelector(".listen-song__bottom-playlist").classList.remove("active");
+    document.querySelector(".listen-song__bottom-playlist-modal").classList.remove("open");
+
+}
