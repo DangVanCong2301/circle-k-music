@@ -457,8 +457,24 @@
                             <div class="listen-song__bottom-chat-bottom-sheet-comment-send">Gửi</div>
                         </div>
                     </div>
-                    <div class="listen-song__bottom-add-playlist">
+                    <div class="listen-song__bottom-add-playlist" onclick="showAddPlaylistBottomSheet()">
                         <i class="uil uil-music-note listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-add-playlist-bottom-sheet-overlay"></div>
+                    <div class="listen-song__bottom-add-playlist-bottom-sheet-container">
+                        <div class="listen-song__bottom-add-playlist-bottom-sheet-header">
+                            Thêm bài hát vào playlist 
+                        </div>
+                        <div class="listen-song__bottom-add-playlist-bottom-sheet-search">
+                            <i class="uil uil-search listen-song__bottom-add-playlist-bottom-sheet-search-icon"></i>
+                            <input type="text" class="listen-song__bottom-add-playlist-bottom-sheet-search-input" placeholder="Tìm kiếm playlist">
+                        </div>
+                        <div class="listen-song__bottom-add-playlist-bottom-sheet-add">
+                            <div class="listen-song__bottom-add-playlist-bottom-sheet-add-box">
+                                <i class="uil uil-plus listen-song__bottom-add-playlist-bottom-sheet-add-icon"></i>
+                            </div>
+                            <div class="listen-song__bottom-add-playlist-bottom-sheet-add-sub">Tạo playlist mới</div>
+                        </div>
                     </div>
                     <div class="listen-song__bottom-add-quality">
                         128Kbps
@@ -466,8 +482,26 @@
                     <div class="listen-song__bottom-download">
                         <i class="uil uil-import listen-song__bottom-icon"></i>
                     </div>
-                    <div class="listen-song__bottom-playlist active">
+                    <div class="listen-song__bottom-playlist" onclick="openPlaylistModal()">
                         <i class="uil uil-list-ol listen-song__bottom-icon"></i>
+                    </div>
+                    <div class="listen-song__bottom-playlist-modal">
+                        <div class="listen-song__bottom-playlist-modal-header">
+                            <i class="uil uil-times listen-song__bottom-playlist-modal-header-icon" onclick="closePlaylistModal()"></i>
+                            <div class="listen-song__bottom-playlist-modal-header-sub">Danh sách phát (10)</div>
+                        </div>
+                        <div class="listen-song__bottom-playlist-modal-song-item playing">
+                            <img src="./assets/img/taylor-swift.jpg" class="listen-song__bottom-playlist-modal-song-item-img" alt="">
+                            <div class="listen-song__bottom-playlist-modal-item-info">
+                                <div class="listen-song__bottom-playlist-modal-song-item-info-name">Back To December</div>
+                                <div class="listen-song__bottom-playlist-modal-song-item-info-artist">Taylor Swift</div>
+                            </div>
+                            <div class="listen-song__bottom-playlist-modal-song-item-ware active">
+                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
+                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
+                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
