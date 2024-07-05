@@ -441,6 +441,7 @@
         padding: 0 10px;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .listen-mobile__control-play-pause {
@@ -744,6 +745,7 @@
         padding: 10px;
         align-items: center;
         column-gap: 12px;
+        cursor: pointer;
     }
 
     .listen-song__bottom-playlist-modal-song-item.playing {
@@ -815,5 +817,30 @@
         100% {
             height: 10px;
         }
+    }
+
+    .listen-song__bottom-playlist-modal-body-title {
+        padding: 16px 20px 10px;
+    }
+
+    .listen-song__bottom-playlist-modal-song-item-bar {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .listen-song__bottom-playlist-modal-song-item-bar-icon {
+        font-size: 24px;
+    }
+
+    .listen-song__bottom-playlist-modal-body-list {
+        height: 500px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+
+    .listen-song__bottom-playlist-modal-body-list::-webkit-scrollbar {
+        display: none;
     }
 }
