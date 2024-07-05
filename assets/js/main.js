@@ -251,6 +251,7 @@ function openHeaderMoreBotomSheet() {
 
 window.addEventListener('click', e => {
     if (e.target == document.querySelector(".listen-mobile__header-more-bottom-sheet-overlay")) {
+        console.log('a');
         document.querySelector(".listen-mobile__header-more-bottom-sheet-overlay").classList.remove("show");
         document.querySelector(".listen-mobile__header-more-bottom-sheet-container").classList.remove("show");
     }

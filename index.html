@@ -308,14 +308,7 @@
                             </div>
                         </div>
                         <div class="listen-mobile__header-more-bottom-sheet-song">
-                            <div class="listen-mobile__header-more-bottom-sheet-song-img" style="background-image: url(./assets/img/taylor-swift.jpg);"></div>
-                            <div class="listen-mobile__header-more-bottom-sheet-song-desc">
-                                <div class="listen-mobile__header-more-bottom-sheet-song-name">Back To December</div>
-                                <div class="listen-mobile__header-more-bottom-sheet-song-artist">Taylor Swift</div>
-                            </div>
-                            <a href="#" class="listen-mobile__header-more-bottom-sheet-song-share">
-                                <i class="uil uil-share listen-mobile__header-more-bottom-sheet-song-share-icon"></i>
-                            </a>
+                            
                         </div>
                         <div class="listen-mobile__header-more-bottom-sheet-options">
                             <div class="listen-mobile__header-more-bottom-sheet-option">
@@ -348,6 +341,7 @@
                 <div class="listen-mobile__thumbnail">
                     <img src="./assets/img/taylor-swift.jpg" alt="" class="listen-mobile__thumbnail-img">
                 </div>
+                <audio src="" class="listen-mobile__audio"></audio>
                 <div class="listen-mobile__info">
                     <div class="listen-mobile__info-share">
                         <i class="uil uil-share listen-mobile__info-icon"></i>
@@ -377,20 +371,20 @@
                     </div>
                     <div class="listen-mobile__seekbar-time">
                         <div class="listen-mobile__seekbar-time-start">0:00</div>
-                        <div class="listen-mobile__seekbar-time-start">4:55</div>
+                        <div class="listen-mobile__seekbar-time-end">4:55</div>
                     </div>
                 </div>
                 <div class="listen-mobile__control">
                     <div class="listen-mobile__control-loop">
-                        <i class="material-icons listen-mobile__control-icon" title="Playlist looped">repeat</i>
+                        <i class="material-icons listen-mobile__control-icon listen-mobile__control-icon-repeat" title="Playlist looped">repeat</i>
                     </div>
                     <div class="listen-mobile__control-prev">
                         <i class="uil uil-step-backward-alt listen-mobile__control-icon" id="prev"></i>
                     </div>
                     <div class="listen-mobile__control-play-pause">
-                        <i class="uil uil-play icon-play listen-mobile__control-play-pause "></i>
+                        <i class="uil uil-play icon-play listen-mobile__control-play-pause"></i>
                     </div>
-                    <div class="listen-mobile__control-play-next">
+                    <div class="listen-mobile__control-next">
                         <i class="uil uil-skip-forward-alt listen-mobile__control-icon" id="next"></i>
                     </div>
                     <div class="listen-mobile__control-repeat-one">
@@ -490,16 +484,13 @@
                             <i class="uil uil-times listen-song__bottom-playlist-modal-header-icon" onclick="closePlaylistModal()"></i>
                             <div class="listen-song__bottom-playlist-modal-header-sub">Danh sách phát (10)</div>
                         </div>
-                        <div class="listen-song__bottom-playlist-modal-song-item playing">
-                            <img src="./assets/img/taylor-swift.jpg" class="listen-song__bottom-playlist-modal-song-item-img" alt="">
-                            <div class="listen-song__bottom-playlist-modal-item-info">
-                                <div class="listen-song__bottom-playlist-modal-song-item-info-name">Back To December</div>
-                                <div class="listen-song__bottom-playlist-modal-song-item-info-artist">Taylor Swift</div>
-                            </div>
-                            <div class="listen-song__bottom-playlist-modal-song-item-ware active">
-                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
-                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
-                                <div class="listen-song__bottom-playlist-modal-song-item-ware-item"></div>
+                        <div class="listen-song__bottom-playlist-modal-song-item-playing">
+                            
+                        </div>
+                        <div class="listen-song__bottom-playlist-modal-body">
+                            <div class="listen-song__bottom-playlist-modal-body-title">Phát tiếp theo</div>
+                            <div class="listen-song__bottom-playlist-modal-body-list">
+                                
                             </div>
                         </div>
                     </div>
@@ -510,4 +501,5 @@
 </body>
 <script src="./assets/js/list-music.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/mobile.js"></script>
 </html>
